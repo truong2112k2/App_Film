@@ -1,0 +1,4 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:width="2dp" /> <!-- Độ rộng con trỏ -->
+    <solid android:color="@color/color_cursor"/> <!-- Màu sắc con trỏ (ở đây là màu xanh lá) -->
+</shape>

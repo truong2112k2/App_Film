@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "992252741245",
+    "project_id": "filmauthentication",
+    "storage_bucket": "filmauthentication.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:992252741245:android:59542f0d4898332c975314",
+        "android_client_info": {
+          "package_name": "com.example.appfilm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC28OIwoZ0QoU6P6gzqzum0Faz51R-OrKI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:992252741245:android:a729ba63fa83891a975314",
+        "android_client_info": {
+          "package_name": "com.example.testapiweather"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC28OIwoZ0QoU6P6gzqzum0Faz51R-OrKI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

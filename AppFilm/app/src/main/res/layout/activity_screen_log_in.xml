@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/general_background_color"
+    android:layout_height="match_parent"
+    tools:context=".Screen.ScreenLogIn">
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_wellcome"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:textSize="25sp"
+                >
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_input_info"
+                android:textColor="#BAFFFFFF"
+                android:layout_marginTop="5dp"
+
+                android:textSize="18sp"
+                >
+            </TextView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="start"
+                android:layout_marginStart="50dp"
+                android:text="Email"
+                android:textSize="20sp"
+                android:textColor="#BAFFFFFF"
+                tools:ignore="HardcodedText">
+            </TextView>
+            <EditText
+                android:id="@+id/edtInputEmail"
+                android:layout_width="333dp"
+                android:layout_height="60dp"
+                android:padding="18dp"
+                android:textCursorDrawable="@drawable/background_cursor"
+                android:textColor="#5A5F76"
+                android:textColorHint="#5A5F76"
+                android:layout_marginTop="5dp"
+                android:hint="Email"
+                android:background="@drawable/background_edit_text"
+                tools:ignore="HardcodedText,RtlSymmetry" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="start"
+                android:layout_marginStart="50dp"
+                android:text="Mật khẩu"
+                android:textSize="20sp"
+                android:textColor="#BAFFFFFF"
+
+                tools:ignore="HardcodedText">
+            </TextView>
+            <EditText
+                android:id="@+id/edtInputPassword"
+                android:layout_width="333dp"
+                android:layout_height="60dp"
+                android:padding="18dp"
+                android:layout_marginTop="5dp"
+                android:textCursorDrawable="@drawable/background_cursor"
+                android:textColorHint="#5A5F76"
+                android:hint="Mật khẩu"
+                android:inputType="textPassword"
+                android:textColor="#5A5F76"
+                android:background="@drawable/background_edit_text"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:id="@+id/txtForgetPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="78dp"
+                android:text="@string/string_forget_password"
+                android:textSize="16sp"
+                android:textColor="#BAFFFFFF"
+                >
+            </TextView>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnLogIn"
+                android:layout_width="222dp"
+                android:layout_height="50dp"
+                android:text="@string/string_login"
+                android:background="@drawable/background_button"
+                android:textColor="@color/white"
+                android:layout_marginTop="12dp"
+                >
+            </androidx.appcompat.widget.AppCompatButton>
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_create_account"
+                    android:textSize="16sp"
+                    android:textColor="#BAFFFFFF"
+
+                    >
+                </TextView>
+                <TextView
+                    android:id="@+id/txtCreateAccount"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_create"
+                    android:layout_marginStart="4dp"
+                    android:textSize="16sp"
+                    android:textColor="#BAFFFFFF"
+
+                    >
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/color_cursor"
+                >
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

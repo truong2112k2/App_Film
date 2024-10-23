@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:background="@drawable/background_item"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        >
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/posterFilm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:shapeAppearanceOverlay="@style/cornerImage"
+            android:scaleType="fitXY"
+
+            >
+        </com.google.android.material.imageview.ShapeableImageView>
+
+        <TextView
+            android:id="@+id/txtVoteAvarage"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            android:background="@color/gray2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textSize="13sp"
+            android:layout_gravity="start|top"
+            android:padding="10dp"
+
+
+            tools:ignore="HardcodedText">
+        </TextView>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/txtTitleFilm"
+            android:layout_width="100dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/gray2"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/gray"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:focusable="true"
+            tools:ignore="HardcodedText">
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/general_background_color"
+    android:orientation="vertical"
+    tools:context=".FragmentMain.FragmentSearch">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/changebackground_searchview"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_margin="10dp"
+            android:layout_height="40dp"
+            >
+            <EditText
+                android:id="@+id/edtInputNameFilm"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:padding="10dp"
+                android:hint="Nhập tên phim(bằng tiếng Anh)"
+                tools:ignore="HardcodedText,InefficientWeight">
+            </EditText>
+            <ImageButton
+                android:id="@+id/btnSearch"
+                android:layout_width="33dp"
+                android:layout_height="30dp"
+                android:scaleType="fitXY"
+                android:paddingEnd="5dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_search"
+                tools:ignore="RtlSymmetry">
+            </ImageButton>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+
+        android:layout_height="match_parent"
+        >
+        <ProgressBar
+            android:id="@+id/progressLoad"
+            android:layout_width="50dp"
+            android:visibility="gone"
+            android:layout_height="50dp"
+            >
+
+        </ProgressBar>
+       <TextView
+           android:id="@+id/txtInputString"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Chưa nhập từ khóa tìm kiếm"
+           android:textColor="@color/gray2"
+           tools:ignore="HardcodedText">
+
+       </TextView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleListFilmSearch"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            >
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+
+</LinearLayout>
