@@ -36,7 +36,7 @@ class ScreenLogIn : AppCompatActivity() {
         logInFuntion()/// bật hàm này lên để bật các chức năng đăng nhập, đăng kí
         toScreenRegister() // chuyển đếm màn hình đăng ký tài khoản
         toScreenResetPasword() // chuyển tới màn hình quên mật khẩu
-     ///   toScreenHome()
+ 
 
 
     }
