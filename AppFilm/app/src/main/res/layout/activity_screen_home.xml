@@ -35,6 +35,7 @@
             android:id="@+id/navitionMenu"
             android:layout_width="match_parent"
             app:menu="@menu/navition_menu"
+            android:background="@color/white"
             android:padding="5dp"
             android:layout_height="63dp"
             >
